@@ -29,7 +29,5 @@ void hostname(char*);
 //char* CaptureScreenshot();
 //void FreeScreenshot(char*);
 void pid_inject(int, const char* );
-void inject_explorer();
-void bypass_shit();
 
 #endif
